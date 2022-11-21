@@ -22,10 +22,10 @@ else{
 
     document.getElementById('output').innerHTML = 'Il prezzo finale (IVA esclusa) è di: ' + prezzoFinale.toFixed(2) + '€';
     
-    const iva = parseInt (prezzoFinale * 22 / 100);
+    const iva = (prezzoFinale * 22 / 100);
 
     document.getElementById('iva').innerHTML = 'IVA: ' + iva + '€';
 
     let totaleDaPagare = ( prezzoFinale + iva);
-    document.getElementById('totale').innerHTML = 'Totale da pagare: ' + totaleDaPagare + '€';
+    document.getElementById('totale').innerHTML = 'Totale da pagare: ' + totaleDaPagare.toFixed(2) + '€';
 
