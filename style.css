@@ -16,6 +16,18 @@ header img{
     width: 15%;
 }
 
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.prezzi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 ul li{
     color: red;
     font-size: 1.4rem;
@@ -33,10 +45,18 @@ ul li{
     font-size: 1.5rem;
     margin-left: 2rem;
     margin-top: 1rem;
+    color: darkred;
 }
 
 #totale{
     font-size: 4rem;
     margin-left: 2rem;
     margin-top: 1rem;
+}
+
+#sconto-applicato{
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    color: green;
 }
