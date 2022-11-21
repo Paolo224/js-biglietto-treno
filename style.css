@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
+    border-bottom: 2px dashed black;
+}
+
+header img{
+    width: 15%;
+}
+
+ul li{
+    color: red;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+#output{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-top: 8rem;
+}
+
+#iva{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+#totale{
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
