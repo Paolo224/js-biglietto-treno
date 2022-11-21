@@ -4,4 +4,19 @@ const etaDelPasseggero = parseInt ( prompt ('Qual è la tua età attuale?') );
 
 let prezzo = kmDaPercorrere * 0.21;
 
-console.log(prezzo)
+let prezzoSconto20Percento = prezzo * 20 / 100;
+
+let prezzoSconto40Percento = prezzo * 40 / 100;
+
+let prezzoFinale;
+
+if ( ( etaDelPasseggero > 18 ) && ( etaDelPasseggero < 65) )
+    prezzoFinale = prezzo;
+else if ( etaDelPasseggero < 18)
+    prezzoFinale = prezzo - prezzoSconto20Percento;
+else 
+    prezzoFinale = prezzo - prezzoSconto40Percento;
+
+    document.getElementById('output').innerHTML = prezzoFinale.toFixed(2)
+
+
